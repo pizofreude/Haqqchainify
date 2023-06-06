@@ -36,11 +36,6 @@ function handleFileUpload() {
       const previewArea = document.getElementById('preview-area');
       const fileImg = document.getElementById('file-img');
       fileImg.src = modifiedImageDataURL;
-      previewArea.style.display = 'block';
-
-      // Show the "DOWNLOAD IMAGE" button
-      const downloadImageBtn = document.getElementById('download-image-btn');
-      downloadImageBtn.style.display = 'block';
     };
   };
 
@@ -66,3 +61,16 @@ function convert() {
     link.click();
   });
 }
+
+// Show the "DOWNLOAD IMAGE" button and preview area
+function showPreview() {
+  const previewArea = document.getElementById('preview-area');
+  previewArea.style.display = 'block';
+}
+
+// Add event listener for "Generate" button click
+const generateBtn = document.querySelector('.btn-brand');
+generateBtn.addEventListener('click', function() {
+  handleFileUpload();
+  showPreview();
+});
