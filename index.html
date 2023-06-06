@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haqqchain Profile Overlay</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/vendor.css"></head>
+  <body>
+    <div class="page-wrapper">
+        <div class="container">
+            <div class="text-center">
+                <img src="images/haqq-logo.png" alt="" width="70%"/>
+                <h1 class="fw-600 font-30 heading-1">Haqqchainify<br />Your Profile Picture</h1>
+                <div class="bg-brand-gray">
+                    <p>For optimal results, upload an image of yourself with a 1:1 aspect ratio</p>
+                    <p>or </p>
+                    <p>any other relevant images to your liking!</p>
+                    <p>Click generate and your overlayed profile picture will be rendered below.</p>
+                    <p>Supported file types: Limited to PNG JPG only.</p>
+                    <!-- <a href="javascript:;" class="btn-gray" onclick="document.getElementById('fileInput').click()">File Upload</a> -->
+                    <label for="fileInput" class="btn-gray">File Upload</label>
+                    <input type="file" name="" class="d-none" id="fileInput" accept="image/*">
+                    <p id="file-name">filename.jpg</p>
+                    <!-- <a href="javascript:;" class="btn-brand" onclick="getFileName()">Generate</a> -->
+                    <button class="btn-brand" onclick="getFileName()">Generate</button>
+                </div>
+                <div id="frame-div">
+                <p>Voilà! Update your haqqchainified social media profile to promote the Haqqchain Ecosystem.</p>                
+                    <div class="text-center" id="preview-area">
+                        <div class="img-section">
+                            <img src="images\about-us.jpg" alt="" id="file-img">
+                        </div>
+                    </div>  
+                    <div id="download-image" style="display: none;">
+                        <a href="javascript:;" class="btn-link font-20" onclick="convert()" id="download-image-btn">DOWNLOAD IMAGE</a>
+                    </div>
+                    <div class="result">  
+                    <a href="javascript:;">DOWNLOAD </a>
+                    </div>
+                </div>
+                <!--<h2 class="font-30 fw-600">Buy Coffee with $ISLM for Dev</h2>
+                <p>Buy Coffee with $ISLM for the Dev involved in this community project:</p>
+                <p class="fw-700">Address</p>
+                <p class="text-justify">
+                    0x72dc66c79b4d3a3da11edfeb2a7d51efb505ee62</p>-->
+                <h2 class="font-30 fw-600">Disclaimer</h2>
+                <p>This WebApp does not retain any information from any user. The uploaded images are not stored on any server.</p> 
+                <p>Our sole objective for this community project is to organically promote Haqqchain by the power of community.</p>
+                <h2 class="font-30 fw-600">Credits</h2>
+                <p>WebApp Contribution by <a href="https://twitter.com/HafeezHaqq" target="_blank" class="btn-link">@HafeezHaqq</a> </p>
+                <p>Acknowledgement of Support to <a href="https://twitter.com/Oxdgost" target="_blank" class="btn-link">@Oxdgost</a>, Cheers!</p>
+                <P>They generously offered their time and skills to create these for people using Photoshop, one by one!</p>
+            </div>
+        </div>
+            <!-- ## footer
+        ================================================== -->
+
+        <footer class="s-footer">
+
+            <div class="row">
+                <div class="column ss-copyright">
+                    <span><img src="images/islamic-logo.png" alt="Logo"/></span>
+                    <span>© Copyright Pizofreude 2023</span>
+                    <span>Design by <a href="https://www.styleshout.com/" target="_blank"
+                            rel="noopener">StyleShout</a></span>
+                </div>
+
+                <div class="ss-go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd"
+                            clip-rule="evenodd">
+                            <path
+                                d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+        </footer> <!-- end s-footer -->
+    </div>
+     <script src="js/html2canvas.js"></script>
+     <script src="js/index.js"></script>
+  </body>
+ 
+</html>
