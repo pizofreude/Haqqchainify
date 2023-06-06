@@ -20,6 +20,16 @@ Haqqchainify is a community project that aims to promote Haqq Network and Islami
 * An preview of the result will be automatically displayed.
 * Once satisfied, simply download it and update your social media DP.
 
+### Use Case Example
+
+- User Input:
+  - ![Original User Profile Image](./images/UserInput.jpg)
+
+- User Output:
+  - ![Overlayed User Profile Image with HAQQ Theme](./images/Output.png)
+
+Disclaimer: The output is still under development. Graphic designer from the community is wholeheartedly welcome onboard!
+
 ## Contributing
 
 Feel free to contribute for this community project in any way, shape or form.
