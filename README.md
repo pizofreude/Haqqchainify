@@ -4,6 +4,14 @@ Haqqchainify your social media Profile Picture via Haqqchain Profile Overlay web
 
 The aim is to promote the Sharia-Compliant Ecosystem in the HaqqNetwork blockchain with its native cryptocurrency IslamicCoin $ISLM.
 
+User can add HAQQ theme as an overlay to their profile picture with just clicks of button.
+
+## Background
+
+Haqq Network is a blockchain network that issues Islamic Coin, its native cryptocurrency. It is fast, trusted and compatible with thousands of applications around the world. It is an EVM-equivalent chain based on Cosmos SDK. The technology behind Haqq makes it possible for any smart contract created on other EVM chains to be deployed onto the new network without any changes needed. Haqq is a scalable, high-throughput Proof-of-Stake blockchain that is fully compatible and interoperable with Ethereum.
+
+Haqqchainify is a community project that aims to promote Haqq Network and Islamic Coin by providing users with an easy way to show their support. The web app takes user image profile as input and overlays it with a HAQQ theme. The output image can then be used as a profile picture on social media platforms, serving as an organic advertisement for Haqq Network and Islamic Coin. The name Haqqchainify is a portmanteau of HAQQ + Blockchain + Signify.
+
 ## How to Use the WebApp
 
 * Go to the community website [Haqqchainify](URL_TO_BE_ADDED).
