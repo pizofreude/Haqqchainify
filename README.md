@@ -26,7 +26,7 @@ Haqqchainify is a community project that aims to promote Haqq Network and Islami
   - ![Original User Profile Image](./images/UserInput.jpg)
 
 - User Output:
-  - ![Overlayed User Profile Image with HAQQ Theme](./images/Output.png)
+  - <img src="./images/Output.png" alt="Overlayed User Profile Image with HAQQ Theme" width="50%" height="50%"/>
 
 Disclaimer: The output is still under development. Graphic designer from the community is wholeheartedly welcome onboard!
 
