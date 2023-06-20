@@ -19,21 +19,32 @@ function handleFileUpload() {
     image.onload = function() {
       const canvas = document.createElement('canvas');
       const context = canvas.getContext('2d');
-      const size = Math.min(image.width, image.height);
+      const maxSize = 500; // maximum size for the modified image
 
-      canvas.width = size;
-      canvas.height = size;
+      // Determine the size of the modified image
+      const size = Math.min(maxSize, Math.max(image.width, image.height));
+
+      canvas.width = maxSize;
+      canvas.height = maxSize;
+
+      // Draw background color
+      context.fillStyle = '#04D484';
+      context.fillRect(0, 0, maxSize, maxSize);
+
+      // Calculate the position to center the image
+      const x = (maxSize - size) / 2;
+      const y = (maxSize - size) / 2;
 
       // Draw circular frame
       context.beginPath();
-      context.arc(size / 2, size / 2, size / 2, 0, 2 * Math.PI);
-      context.fillStyle = '#04D484';
+      context.arc(maxSize / 2, maxSize / 2, size / 2, 0, 2 * Math.PI);
+      context.fillStyle = '#FFFFFF'; // Set the color inside the circular frame
       context.fill();
 
-      // Draw the uploaded image on the circular frame
+      // Draw the uploaded image on the canvas
       context.save();
       context.clip();
-      context.drawImage(image, 0, 0, size, size);
+      context.drawImage(image, x, y, size, size);
       context.restore();
 
       // Get the data URL of the modified image
