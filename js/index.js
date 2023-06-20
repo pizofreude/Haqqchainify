@@ -19,15 +19,22 @@ function handleFileUpload() {
     image.onload = function() {
       const canvas = document.createElement('canvas');
       const context = canvas.getContext('2d');
-      canvas.width = image.width;
-      canvas.height = image.height;
+      const size = Math.min(image.width, image.height);
 
-      // Add your overlay logic here
-      // For example, you can draw a logo on the canvas
-      // using the context.drawImage() method
+      canvas.width = size;
+      canvas.height = size;
 
-      // Draw the uploaded image on the canvas
-      context.drawImage(image, 0, 0, image.width, image.height);
+      // Draw circular frame
+      context.beginPath();
+      context.arc(size / 2, size / 2, size / 2, 0, 2 * Math.PI);
+      context.fillStyle = '#04D484';
+      context.fill();
+
+      // Draw the uploaded image on the circular frame
+      context.save();
+      context.clip();
+      context.drawImage(image, 0, 0, size, size);
+      context.restore();
 
       // Get the data URL of the modified image
       const modifiedImageDataURL = canvas.toDataURL();
@@ -65,7 +72,9 @@ function convert() {
 // Show the "DOWNLOAD IMAGE" button and preview area
 function showPreview() {
   const previewArea = document.getElementById('preview-area');
+  const downloadImageBtn = document.getElementById('download-image-btn');
   previewArea.style.display = 'block';
+  downloadImageBtn.style.display = 'block';
 }
 
 // Add event listener for "Generate" button click
