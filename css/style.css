@@ -2601,10 +2601,11 @@
   #preview-area {
     display: none;
     margin-top: 30px;
+    text-align: center;
   }
   
   #frame-div {
-    text-align: center;
+    margin-top: 20px;
   }
   
   .img-section {
@@ -2632,6 +2633,7 @@
   .result {
     margin-top: 20px;
   }
+  
   
  
  /* ===================================================================
