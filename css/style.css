@@ -2634,7 +2634,18 @@
     margin-top: 20px;
   }
   
-  
+  /* --------------------------------------------------------------------
+  * ##  instruction to download overlayed image
+  * -------------------------------------------------------------------- */
+  .instructions {
+    display: flex;
+    flex-direction: column;
+    }
+    
+    li {
+    margin: 0 0 10px 0;
+    }
+    
  
  /* ===================================================================
   * # PROJECT-WIDE SHARED STYLES
